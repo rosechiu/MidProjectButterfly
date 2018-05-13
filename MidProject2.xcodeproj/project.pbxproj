@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6200DE9B20A5BCD900086EDA /* Butterfly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200DE9A20A5BCD900086EDA /* Butterfly.swift */; };
+		6200DEA120A5CB2400086EDA /* ButterflyDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200DEA020A5CB2400086EDA /* ButterflyDetailHeaderView.swift */; };
 		62A1FA0F20A3221200552F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1FA0E20A3221200552F44 /* AppDelegate.swift */; };
 		62A1FA1120A3221200552F44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1FA1020A3221200552F44 /* ViewController.swift */; };
 		62A1FA1420A3221200552F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A1FA1220A3221200552F44 /* Main.storyboard */; };
@@ -14,6 +16,12 @@
 		62A1FA1920A3221200552F44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A1FA1720A3221200552F44 /* LaunchScreen.storyboard */; };
 		62A1FA2420A3221200552F44 /* MidProject2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1FA2320A3221200552F44 /* MidProject2Tests.swift */; };
 		62A1FA2F20A3221200552F44 /* MidProject2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1FA2E20A3221200552F44 /* MidProject2UITests.swift */; };
+		62A1FA3F20A327A500552F44 /* ButterflyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1FA3E20A327A500552F44 /* ButterflyTableViewController.swift */; };
+		62A1FA4120A328BB00552F44 /* ButterflyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1FA4020A328BB00552F44 /* ButterflyTableViewCell.swift */; };
+		62A8B31820A6AD7000B8A077 /* ButterflyFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8B31720A6AD7000B8A077 /* ButterflyFoodTableViewCell.swift */; };
+		62A8B31A20A6AEC600B8A077 /* ButterflyDetailTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8B31920A6AEC600B8A077 /* ButterflyDetailTextTableViewCell.swift */; };
+		62A8B31C20A6C93B00B8A077 /* ButterflyLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8B31B20A6C93B00B8A077 /* ButterflyLocationTableViewCell.swift */; };
+		62E123DE20A4380A00792C54 /* ButterflyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E123DD20A4380A00792C54 /* ButterflyDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6200DE9A20A5BCD900086EDA /* Butterfly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butterfly.swift; sourceTree = "<group>"; };
+		6200DEA020A5CB2400086EDA /* ButterflyDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetailHeaderView.swift; sourceTree = "<group>"; };
 		62A1FA0B20A3221200552F44 /* MidProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A1FA0E20A3221200552F44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62A1FA1020A3221200552F44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		62A1FA2A20A3221200552F44 /* MidProject2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidProject2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A1FA2E20A3221200552F44 /* MidProject2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidProject2UITests.swift; sourceTree = "<group>"; };
 		62A1FA3020A3221200552F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62A1FA3E20A327A500552F44 /* ButterflyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyTableViewController.swift; sourceTree = "<group>"; };
+		62A1FA4020A328BB00552F44 /* ButterflyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyTableViewCell.swift; sourceTree = "<group>"; };
+		62A8B31720A6AD7000B8A077 /* ButterflyFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyFoodTableViewCell.swift; sourceTree = "<group>"; };
+		62A8B31920A6AEC600B8A077 /* ButterflyDetailTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetailTextTableViewCell.swift; sourceTree = "<group>"; };
+		62A8B31B20A6C93B00B8A077 /* ButterflyLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyLocationTableViewCell.swift; sourceTree = "<group>"; };
+		62E123DD20A4380A00792C54 /* ButterflyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6200DE9C20A5C82400086EDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62A1FA1020A3221200552F44 /* ViewController.swift */,
+				62A1FA3E20A327A500552F44 /* ButterflyTableViewController.swift */,
+				62E123DD20A4380A00792C54 /* ButterflyDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6200DE9D20A5C83E00086EDA /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				62A1FA1220A3221200552F44 /* Main.storyboard */,
+				62A1FA1720A3221200552F44 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		6200DE9E20A5C86600086EDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62A1FA4020A328BB00552F44 /* ButterflyTableViewCell.swift */,
+				6200DEA020A5CB2400086EDA /* ButterflyDetailHeaderView.swift */,
+				62A8B31720A6AD7000B8A077 /* ButterflyFoodTableViewCell.swift */,
+				62A8B31920A6AEC600B8A077 /* ButterflyDetailTextTableViewCell.swift */,
+				62A8B31B20A6C93B00B8A077 /* ButterflyLocationTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6200DE9F20A5C87A00086EDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6200DE9A20A5BCD900086EDA /* Butterfly.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		62A1FA0220A3221200552F44 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +152,12 @@
 		62A1FA0D20A3221200552F44 /* MidProject2 */ = {
 			isa = PBXGroup;
 			children = (
+				6200DE9F20A5C87A00086EDA /* Model */,
+				6200DE9E20A5C86600086EDA /* View */,
+				6200DE9D20A5C83E00086EDA /* StoryBoard */,
+				6200DE9C20A5C82400086EDA /* Controller */,
 				62A1FA0E20A3221200552F44 /* AppDelegate.swift */,
-				62A1FA1020A3221200552F44 /* ViewController.swift */,
-				62A1FA1220A3221200552F44 /* Main.storyboard */,
 				62A1FA1520A3221200552F44 /* Assets.xcassets */,
-				62A1FA1720A3221200552F44 /* LaunchScreen.storyboard */,
 				62A1FA1A20A3221200552F44 /* Info.plist */,
 			);
 			path = MidProject2;
@@ -260,7 +316,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				62A1FA1120A3221200552F44 /* ViewController.swift in Sources */,
+				62A1FA3F20A327A500552F44 /* ButterflyTableViewController.swift in Sources */,
+				62E123DE20A4380A00792C54 /* ButterflyDetailViewController.swift in Sources */,
+				6200DE9B20A5BCD900086EDA /* Butterfly.swift in Sources */,
 				62A1FA0F20A3221200552F44 /* AppDelegate.swift in Sources */,
+				6200DEA120A5CB2400086EDA /* ButterflyDetailHeaderView.swift in Sources */,
+				62A8B31C20A6C93B00B8A077 /* ButterflyLocationTableViewCell.swift in Sources */,
+				62A8B31820A6AD7000B8A077 /* ButterflyFoodTableViewCell.swift in Sources */,
+				62A1FA4120A328BB00552F44 /* ButterflyTableViewCell.swift in Sources */,
+				62A8B31A20A6AEC600B8A077 /* ButterflyDetailTextTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
