@@ -27,7 +27,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DLV-5t-4i4">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="175.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68U-SJ-1A8">
+                                                    <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68U-SJ-1A8">
                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="kYy-Eu-Rdf"/>
@@ -59,7 +59,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Rb-1f-pZx">
                                                 <rect key="frame" x="193" y="0.0" width="150" height="175.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgS-Sj-0w8">
+                                                    <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgS-Sj-0w8">
                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="150" id="Imq-WF-2AV"/>
@@ -91,7 +91,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4aB-CO-X9e">
                                         <rect key="frame" x="0.0" y="175.5" width="150" height="175.5"/>
                                         <subviews>
-                                            <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-zS-9Wj">
+                                            <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-zS-9Wj">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="mgc-MZ-sbY"/>
@@ -210,11 +210,11 @@
             <objects>
                 <viewController id="eWN-76-BfI" customClass="ButterflyDetailViewController" customModule="MidProject2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tkR-QZ-R25">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DEZ-o2-R3m">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="836"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="hnh-0H-5Dj" userLabel="HeaderView" customClass="ButterflyDetailHeaderView" customModule="MidProject2" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
@@ -386,6 +386,69 @@
                                             <outlet property="locationLabel" destination="ql1-N6-c4k" id="oA8-zU-elf"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ButterflyDetailSeparatorCell" id="HyN-DF-w1z" customClass="ButterflyDetailSeparatorCell" customModule="MidProject2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="510" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HyN-DF-w1z" id="Hb1-WW-soH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5Yo-9C-kad">
+                                                    <rect key="frame" x="16" y="11" width="343" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subsection Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kek-i4-UPF" userLabel="Separator">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="24"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrq-vs-duo">
+                                                            <rect key="frame" x="0.0" y="29" width="343" height="1"/>
+                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="APa-8D-Pnn"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Yo-9C-kad" firstAttribute="leading" secondItem="Hb1-WW-soH" secondAttribute="leading" constant="16" id="KFC-d3-vvM"/>
+                                                <constraint firstAttribute="bottom" secondItem="5Yo-9C-kad" secondAttribute="bottom" constant="3" id="bQG-bj-48P"/>
+                                                <constraint firstItem="5Yo-9C-kad" firstAttribute="top" secondItem="Hb1-WW-soH" secondAttribute="top" constant="11" id="kOJ-XH-vQ3"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Yo-9C-kad" secondAttribute="trailing" constant="16" id="mlV-Tu-yne"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="Kek-i4-UPF" id="35O-36-wef"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ButterflyDetailMapCell" rowHeight="215" id="MUb-KB-gYm" customClass="ButterflyDetailMapCell" customModule="MidProject2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="554" width="375" height="215"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MUb-KB-gYm" id="1An-mq-zs2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAt-dK-jk1">
+                                                    <rect key="frame" x="0.0" y="10" width="375" height="205"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="205" id="wyZ-3j-qgj"/>
+                                                    </constraints>
+                                                </mapView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="LAt-dK-jk1" secondAttribute="trailing" id="DRm-2t-Fet"/>
+                                                <constraint firstItem="LAt-dK-jk1" firstAttribute="leading" secondItem="1An-mq-zs2" secondAttribute="leading" id="Fd1-nm-mna"/>
+                                                <constraint firstItem="LAt-dK-jk1" firstAttribute="top" secondItem="1An-mq-zs2" secondAttribute="top" constant="10" id="ehP-H1-6fh"/>
+                                                <constraint firstAttribute="bottom" secondItem="LAt-dK-jk1" secondAttribute="bottom" id="vNP-rK-8FU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mapView" destination="LAt-dK-jk1" id="Lnk-gL-fZL"/>
+                                            <segue destination="ONx-2Y-dJk" kind="show" identifier="showMap" id="Hed-nn-T0s"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="eWN-76-BfI" id="TVw-C2-Gov"/>
@@ -402,6 +465,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bZG-wy-oC6"/>
                     </view>
+                    <size key="freeformSize" width="375" height="900"/>
                     <connections>
                         <outlet property="headerView" destination="hnh-0H-5Dj" id="Yst-P3-ZZb"/>
                     </connections>
@@ -409,6 +473,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEw-cv-Sja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1877.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uBE-Kh-jsw">
+            <objects>
+                <viewController id="ONx-2Y-dJk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fnJ-p3-4yU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U09-y5-dcl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U09-y5-dcl" firstAttribute="trailing" secondItem="YpP-Zq-7KH" secondAttribute="trailing" id="9Li-W0-1I1"/>
+                            <constraint firstItem="U09-y5-dcl" firstAttribute="top" secondItem="fnJ-p3-4yU" secondAttribute="top" id="PiC-vv-xDI"/>
+                            <constraint firstItem="U09-y5-dcl" firstAttribute="leading" secondItem="YpP-Zq-7KH" secondAttribute="leading" id="WpV-lO-1cv"/>
+                            <constraint firstItem="U09-y5-dcl" firstAttribute="bottom" secondItem="YpP-Zq-7KH" secondAttribute="bottom" id="Zv3-K3-Caz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YpP-Zq-7KH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeb-wA-vqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746.4000000000001" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sfk-Bt-o2a">

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		6200DE9B20A5BCD900086EDA /* Butterfly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200DE9A20A5BCD900086EDA /* Butterfly.swift */; };
 		6200DEA120A5CB2400086EDA /* ButterflyDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6200DEA020A5CB2400086EDA /* ButterflyDetailHeaderView.swift */; };
+		6279188F20AF235800932BB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6279188E20AF235800932BB3 /* MapKit.framework */; };
+		6279189120AF252700932BB3 /* ButterflyDetailSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6279189020AF252700932BB3 /* ButterflyDetailSeparatorCell.swift */; };
+		6279189320AF259C00932BB3 /* ButterflyDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6279189220AF259C00932BB3 /* ButterflyDetailMapCell.swift */; };
 		62A1FA0F20A3221200552F44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1FA0E20A3221200552F44 /* AppDelegate.swift */; };
 		62A1FA1120A3221200552F44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A1FA1020A3221200552F44 /* ViewController.swift */; };
 		62A1FA1420A3221200552F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A1FA1220A3221200552F44 /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 /* Begin PBXFileReference section */
 		6200DE9A20A5BCD900086EDA /* Butterfly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butterfly.swift; sourceTree = "<group>"; };
 		6200DEA020A5CB2400086EDA /* ButterflyDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetailHeaderView.swift; sourceTree = "<group>"; };
+		6279188E20AF235800932BB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6279189020AF252700932BB3 /* ButterflyDetailSeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetailSeparatorCell.swift; sourceTree = "<group>"; };
+		6279189220AF259C00932BB3 /* ButterflyDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetailMapCell.swift; sourceTree = "<group>"; };
 		62A1FA0B20A3221200552F44 /* MidProject2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidProject2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62A1FA0E20A3221200552F44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62A1FA1020A3221200552F44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6279188F20AF235800932BB3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +124,8 @@
 				62A8B31720A6AD7000B8A077 /* ButterflyFoodTableViewCell.swift */,
 				62A8B31920A6AEC600B8A077 /* ButterflyDetailTextTableViewCell.swift */,
 				62A8B31B20A6C93B00B8A077 /* ButterflyLocationTableViewCell.swift */,
+				6279189020AF252700932BB3 /* ButterflyDetailSeparatorCell.swift */,
+				6279189220AF259C00932BB3 /* ButterflyDetailMapCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +138,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6279188D20AF235800932BB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6279188E20AF235800932BB3 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62A1FA0220A3221200552F44 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +153,7 @@
 				62A1FA2220A3221200552F44 /* MidProject2Tests */,
 				62A1FA2D20A3221200552F44 /* MidProject2UITests */,
 				62A1FA0C20A3221200552F44 /* Products */,
+				6279188D20AF235800932BB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +268,11 @@
 					62A1FA0A20A3221200552F44 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					62A1FA1E20A3221200552F44 = {
 						CreatedOnToolsVersion = 9.2;
@@ -316,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				62A1FA1120A3221200552F44 /* ViewController.swift in Sources */,
+				6279189320AF259C00932BB3 /* ButterflyDetailMapCell.swift in Sources */,
+				6279189120AF252700932BB3 /* ButterflyDetailSeparatorCell.swift in Sources */,
 				62A1FA3F20A327A500552F44 /* ButterflyTableViewController.swift in Sources */,
 				62E123DE20A4380A00792C54 /* ButterflyDetailViewController.swift in Sources */,
 				6200DE9B20A5BCD900086EDA /* Butterfly.swift in Sources */,

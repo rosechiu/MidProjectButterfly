@@ -16,8 +16,7 @@ class ButterflyTableViewController: UITableViewController {
     var butterflyImageView1 = ["butterfly1","butterfly3","butterfly5","butterfly2","butterfly4"]
     var butterflyImageView2 = ["butterfly8","butterfly9","butterfly7","butterfly10","butterfly6"]
     var butterflyImageView3 = ["butterfly11","butterfly14","butterfly15","butterfly13","butterfly12"]*/
-    var selectButterflyName = [String]()
-    var selectButterflyImage = [String]()
+    var selectButterfly: Butterfly = Butterfly()
     
     var butterfly1:[Butterfly] = [Butterfly(name:"昇天鳳蝶",scientific:"Pazala eurous",image:"butterfly1",food:"樟科植物",description:"本種幼蟲以樟科植物，如土肉桂等為食，一年一世代，成蟲主要在春季活動。",location:"分布於全島低海拔到中海拔山區。"),Butterfly(name:"青斑鳳蝶",scientific:"Graphium doson",image:"butterfly3",food:"木蘭科植物",description:"本種幼蟲以木蘭科植物，如白玉蘭、含笑花、烏心石等為食，一年多世代，以蛹態越冬。",location:"分布於全島低海拔到中海拔山區。"),Butterfly(name:"紅斑鳳蝶",scientific:"Papilio rumanzovia",image:"butterfly5",food:"芸香科植物",description:"又名紅斑大鳳蝶、基紅鳳蝶、紅斑甌蝶、紅基鳳蝶，為鳳蝶科鳳蝶屬下的一個種。",location:"分布於全島低海拔到中海拔山區。"),Butterfly(name:"斑鳳蝶",scientific:"Papilio clytia",image:"butterfly2",food:"樟科植物",description:"斑鳳蝶的寄主植物為多種樟科植物，如紅楠、樟樹和土肉桂等，成蟲出現後不久，大概就可以開始在這些植物上，觀察到它的幼蟲。",location:"主要分布於金門、中國南部及南亞地區"),Butterfly(name:"大鳳蝶",scientific:"Papilio memnon",image:"butterfly4",food:"芸香科植物",description:"別名長崎鳳蝶、柑鳳蝶、多型藍鳳蝶、多型大鳳蝶。",location:"分布於中國長江以南和四川省，以及南亞次大陸、東南亞、台灣、日本。")]
     
@@ -57,25 +56,28 @@ class ButterflyTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ButterflyTableViewCell
         // Configure the cell...
         if number==1{
-            cell.nameLabel.text = butterfly1[indexPath.row].name
-            cell.ImageView.image = UIImage(named:butterfly1[indexPath.row].image)
+            selectButterfly = butterfly1[indexPath.row]
+            //cell.nameLabel.text = butterfly1[indexPath.row].name
+            //cell.ImageView.image = UIImage(named:butterfly1[indexPath.row].image)
             navigationItem.title = "鳳蝶科"
             navigationItem.backBarButtonItem?.title = "鳳蝶科"
         }
         else if number==2{
-            cell.nameLabel.text = butterfly2[indexPath.row].name
-            cell.ImageView.image = UIImage(named:butterfly2[indexPath.row].image)
+            selectButterfly = butterfly2[indexPath.row]
+            //cell.nameLabel.text = butterfly2[indexPath.row].name
+            //cell.ImageView.image = UIImage(named:butterfly2[indexPath.row].image)
             navigationItem.title = "弄蝶科"
             navigationItem.backBarButtonItem?.title = "弄蝶科"
         }
         else {
-            cell.nameLabel.text = butterfly3[indexPath.row].name
-            cell.ImageView.image = UIImage(named:butterfly3[indexPath.row].image)
+            selectButterfly = butterfly3[indexPath.row]
+            //cell.nameLabel.text = butterfly3[indexPath.row].name
+            //cell.ImageView.image = UIImage(named:butterfly3[indexPath.row].image)
             navigationItem.title = "灰蝶科"
             navigationItem.backBarButtonItem?.title = "灰蝶科"
         }
-        //cell.nameLabel.text = selectButterflyName[indexPath.row]
-        //cell.ImageView.image = UIImage(named:selectButterflyImage[indexPath.row])
+        cell.nameLabel.text = selectButterfly.name
+        cell.ImageView.image = UIImage(named:selectButterfly.image)
         return cell
     }
     

@@ -11,7 +11,7 @@ import UIKit
 class ButterflyDetailViewController: UIViewController ,UITableViewDataSource,UITextViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,7 +31,13 @@ class ButterflyDetailViewController: UIViewController ,UITableViewDataSource,UIT
             cell.butterflyIcon.image = UIImage(named: "iconButterfly")
             cell.locationLabel.text = butterfly.location
             return cell
-            
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing:ButterflyDetailSeparatorCell.self),for:indexPath) as! ButterflyDetailSeparatorCell
+            cell.titleLabel.text = "牠們分布在..."
+            return cell
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ButterflyDetailMapCell.self),for:indexPath) as! ButterflyDetailMapCell
+            return cell
         default:
             fatalError("Hello!")
         }
