@@ -125,11 +125,30 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="Q4O-B0-HHi">
+                                <rect key="frame" x="16" y="471" width="343" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="FGS-Xv-PZR"/>
+                                    <constraint firstAttribute="width" constant="343" id="awO-5w-NMu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Q4O-B0-HHi" firstAttribute="top" secondItem="TMp-cj-JiS" secondAttribute="bottom" constant="56" id="3I2-ui-6d5"/>
                             <constraint firstItem="TMp-cj-JiS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IYx-RL-Kaa"/>
+                            <constraint firstItem="Q4O-B0-HHi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aIZ-M9-REi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q4O-B0-HHi" secondAttribute="trailing" constant="16" id="gxm-Kj-zu1"/>
                             <constraint firstItem="TMp-cj-JiS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rZX-sJ-bCW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q4O-B0-HHi" secondAttribute="bottom" constant="20" id="wMD-RE-pFn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -142,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="133"/>
+            <point key="canvasLocation" x="293.60000000000002" y="132.68365817091455"/>
         </scene>
         <!--Butterfly Table View Controller-->
         <scene sceneID="FAe-DH-dlJ">
@@ -528,5 +547,6 @@
         <image name="butterfly1" width="1600" height="1066"/>
         <image name="butterfly11" width="1296" height="864"/>
         <image name="butterfly6" width="1600" height="1067"/>
+        <image name="picture" width="1982" height="1148"/>
     </resources>
 </document>

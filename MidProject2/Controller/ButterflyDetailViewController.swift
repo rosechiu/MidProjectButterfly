@@ -33,7 +33,7 @@ class ButterflyDetailViewController: UIViewController ,UITableViewDataSource,UIT
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing:ButterflyDetailSeparatorCell.self),for:indexPath) as! ButterflyDetailSeparatorCell
-            cell.titleLabel.text = "牠們分布在..."
+            cell.titleLabel.text = "牠們分布於..."
             return cell
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ButterflyDetailMapCell.self),for:indexPath) as! ButterflyDetailMapCell
