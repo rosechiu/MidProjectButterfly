@@ -37,12 +37,20 @@ class ButterflyDetailViewController: UIViewController ,UITableViewDataSource,UIT
             return cell
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ButterflyDetailMapCell.self),for:indexPath) as! ButterflyDetailMapCell
+            print(butterfly.location)
+            cell.configure(location: butterfly.location)
             return cell
         default:
             fatalError("Hello!")
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap"{
+            let destinationController = segue.destination as! MapViewController
+            destinationController.butterfly = butterfly
+        }
+    }
 
     //@IBOutlet var butterflyImageView: UIImageView!
     //var butterflyImageName = ""

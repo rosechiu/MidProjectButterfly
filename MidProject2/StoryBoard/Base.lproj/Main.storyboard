@@ -498,10 +498,10 @@
             </objects>
             <point key="canvasLocation" x="1877.5999999999999" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="uBE-Kh-jsw">
             <objects>
-                <viewController id="ONx-2Y-dJk" sceneMemberID="viewController">
+                <viewController id="ONx-2Y-dJk" customClass="MapViewController" customModule="MidProject2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fnJ-p3-4yU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -519,6 +519,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YpP-Zq-7KH"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="U09-y5-dcl" id="Enu-ID-3gj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeb-wA-vqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
